@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Text Editor - Mateo Hideg", "Text Editor - Mateo Hideg\Text Editor - Mateo Hideg.csproj", "{6BCEA041-7BB4-4957-A651-65AB2C34C41D}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup1", "Setup1\Setup1.vdproj", "{9ABF9BA6-36DE-4DCB-B848-70959063C5A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6BCEA041-7BB4-4957-A651-65AB2C34C41D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BCEA041-7BB4-4957-A651-65AB2C34C41D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BCEA041-7BB4-4957-A651-65AB2C34C41D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BCEA041-7BB4-4957-A651-65AB2C34C41D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9ABF9BA6-36DE-4DCB-B848-70959063C5A5}.Debug|Any CPU.ActiveCfg = Debug
+		{9ABF9BA6-36DE-4DCB-B848-70959063C5A5}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {484EA99C-122E-4A32-BBB8-A4BC48DE6DDC}
+	EndGlobalSection
+EndGlobal
