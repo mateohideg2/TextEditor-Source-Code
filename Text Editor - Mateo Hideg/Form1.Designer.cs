@@ -208,40 +208,40 @@
             // cortarToolStripMenuItem1
             // 
             this.cortarToolStripMenuItem1.Name = "cortarToolStripMenuItem1";
-            this.cortarToolStripMenuItem1.Size = new System.Drawing.Size(162, 22);
+            this.cortarToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.cortarToolStripMenuItem1.Text = "Cortar";
             this.cortarToolStripMenuItem1.Click += new System.EventHandler(this.cortarToolStripMenuItem1_Click);
             // 
             // copiarToolStripMenuItem1
             // 
             this.copiarToolStripMenuItem1.Name = "copiarToolStripMenuItem1";
-            this.copiarToolStripMenuItem1.Size = new System.Drawing.Size(162, 22);
+            this.copiarToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.copiarToolStripMenuItem1.Text = "Copiar";
             this.copiarToolStripMenuItem1.Click += new System.EventHandler(this.copiarToolStripMenuItem1_Click);
             // 
             // pegarToolStripMenuItem1
             // 
             this.pegarToolStripMenuItem1.Name = "pegarToolStripMenuItem1";
-            this.pegarToolStripMenuItem1.Size = new System.Drawing.Size(162, 22);
+            this.pegarToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.pegarToolStripMenuItem1.Text = "Pegar";
             this.pegarToolStripMenuItem1.Click += new System.EventHandler(this.pegarToolStripMenuItem1_Click);
             // 
             // eliminarToolStripMenuItem1
             // 
             this.eliminarToolStripMenuItem1.Name = "eliminarToolStripMenuItem1";
-            this.eliminarToolStripMenuItem1.Size = new System.Drawing.Size(162, 22);
+            this.eliminarToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.eliminarToolStripMenuItem1.Text = "Eliminar";
             this.eliminarToolStripMenuItem1.Click += new System.EventHandler(this.eliminarToolStripMenuItem1_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(159, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(177, 6);
             // 
             // seleccionarTodoToolStripMenuItem1
             // 
             this.seleccionarTodoToolStripMenuItem1.Name = "seleccionarTodoToolStripMenuItem1";
-            this.seleccionarTodoToolStripMenuItem1.Size = new System.Drawing.Size(162, 22);
+            this.seleccionarTodoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.seleccionarTodoToolStripMenuItem1.Text = "Seleccionar todo";
             this.seleccionarTodoToolStripMenuItem1.Click += new System.EventHandler(this.seleccionarTodoToolStripMenuItem1_Click);
             // 
