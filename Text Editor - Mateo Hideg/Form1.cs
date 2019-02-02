@@ -271,15 +271,6 @@ namespace Text_Editor___Mateo_Hideg
             {
                 copiarToolStripMenuItem1.Enabled = true;
             }
-
-            if (Clipboard.ContainsText(TextDataFormat.Rtf))
-            {
-                pegarToolStripMenuItem1.Enabled = true;
-            }
-            else
-            {
-                pegarToolStripMenuItem1.Enabled = false;
-            }
         }
 
         private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
@@ -319,20 +310,11 @@ namespace Text_Editor___Mateo_Hideg
             {
                 copiarToolStripMenuItem.Enabled = true;
             }
-
-            if (Clipboard.ContainsText(TextDataFormat.Rtf))
-            {
-                pegarToolStripMenuItem.Enabled = true;
-            }
-            else
-            {
-                pegarToolStripMenuItem.Enabled = false;
-            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            pegarToolStripMenuItem.Enabled = false;
+            pegarToolStripMenuItem.Enabled = true;
             copiarToolStripMenuItem.Enabled = false;
             cortarToolStripMenuItem.Enabled = false;
             seleccionarTodoToolStripMenuItem.Enabled = false;
