@@ -271,6 +271,24 @@ namespace Text_Editor___Mateo_Hideg
             {
                 copiarToolStripMenuItem1.Enabled = true;
             }
+
+            if (Clipboard.ContainsText(TextDataFormat.Text))
+            {
+                pegarToolStripMenuItem1.Enabled = true;
+            }
+            else
+            {
+                pegarToolStripMenuItem1.Enabled = false;
+
+                if (Clipboard.ContainsImage())
+                {
+                    pegarToolStripMenuItem1.Enabled = true;
+                }
+                else
+                {
+                    pegarToolStripMenuItem1.Enabled = false;
+                }
+            }
         }
 
         private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
@@ -310,11 +328,29 @@ namespace Text_Editor___Mateo_Hideg
             {
                 copiarToolStripMenuItem.Enabled = true;
             }
+
+            if (Clipboard.ContainsText(TextDataFormat.Text))
+            {
+                pegarToolStripMenuItem.Enabled = true;
+            }
+            else
+            {
+                pegarToolStripMenuItem.Enabled = false;
+
+                if (Clipboard.ContainsImage())
+                {
+                    pegarToolStripMenuItem.Enabled = true;
+                }
+                else
+                {
+                    pegarToolStripMenuItem.Enabled = false;
+                }
+            }            
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            pegarToolStripMenuItem.Enabled = true;
+            pegarToolStripMenuItem.Enabled = false;
             copiarToolStripMenuItem.Enabled = false;
             cortarToolStripMenuItem.Enabled = false;
             seleccionarTodoToolStripMenuItem.Enabled = false;

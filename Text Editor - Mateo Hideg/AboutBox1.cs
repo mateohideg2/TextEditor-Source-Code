@@ -17,7 +17,7 @@ namespace Text_Editor___Mateo_Hideg
             InitializeComponent();
             this.Text = String.Format("Acerca de | TextEditor - Mateo Hideg");
             this.labelProductName.Text = String.Format("Nombre de producto: TextEditor");
-            this.labelVersion.Text = String.Format("Versión: 1.0.5");
+            this.labelVersion.Text = String.Format("Versión: 1.0.6");
             this.labelCopyright.Text = String.Format("Copyright 2019-" + fechaActual.Year);
             this.labelCompanyName.Text = String.Format("Nombre de la compañía: Mateo Hideg");
             this.textBoxDescription.Text = String.Format("TextEditor es una aplicacion para editar textos creada por Mateo Hideg, esta aplicacion fue lanzada en el 2019 y sigue activa.");
