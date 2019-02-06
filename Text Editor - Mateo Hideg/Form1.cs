@@ -272,14 +272,12 @@ namespace Text_Editor___Mateo_Hideg
                 copiarToolStripMenuItem1.Enabled = true;
             }
 
-            if (Clipboard.ContainsText(TextDataFormat.Text))
+            if (Clipboard.ContainsText())
             {
                 pegarToolStripMenuItem1.Enabled = true;
             }
             else
             {
-                pegarToolStripMenuItem1.Enabled = false;
-
                 if (Clipboard.ContainsImage())
                 {
                     pegarToolStripMenuItem1.Enabled = true;
@@ -329,15 +327,13 @@ namespace Text_Editor___Mateo_Hideg
                 copiarToolStripMenuItem.Enabled = true;
             }
 
-            if (Clipboard.ContainsText(TextDataFormat.Text))
+            if (Clipboard.ContainsText())
             {
                 pegarToolStripMenuItem.Enabled = true;
             }
             else
             {
-                pegarToolStripMenuItem.Enabled = false;
-
-                if (Clipboard.ContainsImage())
+            if (Clipboard.ContainsImage())
                 {
                     pegarToolStripMenuItem.Enabled = true;
                 }

@@ -103,11 +103,6 @@ namespace Text_Editor___Mateo_Hideg
         }
         #endregion
 
-        private void AboutBox1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void okButton_Click(object sender, EventArgs e)
         {
             this.Dispose();
