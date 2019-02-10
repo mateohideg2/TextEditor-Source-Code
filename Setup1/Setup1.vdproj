@@ -202,15 +202,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:TextEditor"
-        "ProductCode" = "8:{8EC6F6C4-1D48-4E67-9A9E-4A9BB9DC7086}"
-        "PackageCode" = "8:{C6383995-A45B-4FC2-83CF-F2B9E1702C97}"
+        "ProductCode" = "8:{12A67BDA-3E25-4224-950E-8D48FBE5AAEF}"
+        "PackageCode" = "8:{C9F575F4-8591-4F1D-8BB7-3C775D888BF8}"
         "UpgradeCode" = "8:{7662B050-5EDD-4D07-9D79-FAE18D3F8B83}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.6"
+        "ProductVersion" = "8:1.0.7"
         "Manufacturer" = "8:Mateo Hideg"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:https://mateohideg.000webhostapp.com"
@@ -752,7 +752,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_70B3479F3F414023AA21EDA776DB56E4"
             {
-            "SourcePath" = "8:..\\Text Editor - Mateo Hideg\\obj\\Debug\\Text Editor - Mateo Hideg.exe"
+            "SourcePath" = "8:..\\Text Editor - Mateo Hideg\\obj\\Release\\Text Editor - Mateo Hideg.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_095EE5A5489646C4B4ADC35DC644156A"

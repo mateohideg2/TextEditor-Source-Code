@@ -355,5 +355,24 @@ namespace Text_Editor___Mateo_Hideg
             cortarToolStripMenuItem1.Enabled = false;
             seleccionarTodoToolStripMenuItem1.Enabled = false;
         }
+
+        private void fontDialog1_Apply(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void fuenteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fontDialog1.ShowColor = true;
+
+            fontDialog1.Font = richTextBox1.Font;
+            fontDialog1.Color = richTextBox1.ForeColor;
+
+            if (fontDialog1.ShowDialog() != DialogResult.Cancel)
+            {
+                richTextBox1.Font = fontDialog1.Font;
+                richTextBox1.ForeColor = fontDialog1.Color;
+            }
+        }
     }
 }
