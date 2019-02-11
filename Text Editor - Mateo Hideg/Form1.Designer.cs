@@ -44,6 +44,8 @@
             this.abrirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guardarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guardarComoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
+            this.printoolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ediciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -149,6 +151,8 @@
             this.abrirToolStripMenuItem,
             this.guardarToolStripMenuItem,
             this.guardarComoToolStripMenuItem,
+            this.toolStripMenuItem2,
+            this.printoolStripMenuItem,
             this.toolStripMenuItem1,
             this.salirToolStripMenuItem});
             this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
@@ -182,6 +186,18 @@
             this.guardarComoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.guardarComoToolStripMenuItem.Text = "Guardar como";
             this.guardarComoToolStripMenuItem.Click += new System.EventHandler(this.guardarComoToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(177, 6);
+            // 
+            // printoolStripMenuItem
+            // 
+            this.printoolStripMenuItem.Name = "printoolStripMenuItem";
+            this.printoolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.printoolStripMenuItem.Text = "Imprimir";
+            this.printoolStripMenuItem.Click += new System.EventHandler(this.printoolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
@@ -343,6 +359,8 @@
         private System.Windows.Forms.ToolStripMenuItem formatoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fuenteToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem printoolStripMenuItem;
     }
 }
 

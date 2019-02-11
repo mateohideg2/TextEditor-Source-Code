@@ -374,5 +374,10 @@ namespace Text_Editor___Mateo_Hideg
                 richTextBox1.ForeColor = fontDialog1.Color;
             }
         }
+
+        private void printoolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("avisoImpresion.bat");
+        }
     }
 }
