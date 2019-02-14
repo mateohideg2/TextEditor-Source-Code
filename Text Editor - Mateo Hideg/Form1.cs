@@ -278,14 +278,7 @@ namespace Text_Editor___Mateo_Hideg
             }
             else
             {
-                if (Clipboard.ContainsImage())
-                {
-                    pegarToolStripMenuItem1.Enabled = true;
-                }
-                else
-                {
-                    pegarToolStripMenuItem1.Enabled = false;
-                }
+                pegarToolStripMenuItem.Enabled = false;
             }
         }
 
@@ -333,15 +326,8 @@ namespace Text_Editor___Mateo_Hideg
             }
             else
             {
-            if (Clipboard.ContainsImage())
-                {
-                    pegarToolStripMenuItem.Enabled = true;
-                }
-                else
-                {
-                    pegarToolStripMenuItem.Enabled = false;
-                }
-            }            
+                pegarToolStripMenuItem.Enabled = false;
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -358,26 +344,104 @@ namespace Text_Editor___Mateo_Hideg
 
         private void fontDialog1_Apply(object sender, EventArgs e)
         {
-            
+
         }
 
         private void fuenteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             fontDialog1.ShowColor = true;
 
-            fontDialog1.Font = richTextBox1.Font;
-            fontDialog1.Color = richTextBox1.ForeColor;
+            if (richTextBox1.SelectedText == "")
+            {
+                fontDialog1.Font = richTextBox1.Font;
+                fontDialog1.Color = richTextBox1.ForeColor;
+            }
+            else
+            {
+                fontDialog1.Font = richTextBox1.SelectionFont;
+                fontDialog1.Color = richTextBox1.SelectionColor;
+            }
 
             if (fontDialog1.ShowDialog() != DialogResult.Cancel)
             {
-                richTextBox1.Font = fontDialog1.Font;
-                richTextBox1.ForeColor = fontDialog1.Color;
+                if (richTextBox1.SelectedText == "")
+                {
+                    richTextBox1.Font = fontDialog1.Font;
+                    richTextBox1.ForeColor = fontDialog1.Color;
+                }
+                else
+                {
+                    richTextBox1.SelectionFont = fontDialog1.Font;
+                    richTextBox1.SelectionColor = fontDialog1.Color;
+                }
             }
         }
 
-        private void printoolStripMenuItem_Click(object sender, EventArgs e)
+        private void richTextBox1_KeyDown(object sender, KeyEventArgs e)
         {
-            System.Diagnostics.Process.Start("avisoImpresion.bat");
+            if (e.Modifiers == Keys.Control)
+            {
+                switch (e.KeyCode)
+                {
+                    case Keys.V:
+                        e.Handled = true;
+                        break;
+                    default:
+                        break;
+                }
+            }
+
+            if (e.Modifiers == Keys.Shift)
+            {
+                switch (e.KeyCode)
+                {
+                    case Keys.Insert:
+                        e.Handled = true;
+                        break;
+                    default:
+                        break;
+                }
+            }
+
+            bool ctrlV = e.Modifiers == Keys.Control && e.KeyCode == Keys.V;
+            bool shiftIns = e.Modifiers == Keys.Shift && e.KeyCode == Keys.Insert;
+
+            if (ctrlV || shiftIns)
+            {
+                if (Clipboard.ContainsText())
+                {
+                    richTextBox1.Paste();
+                }
+                else
+                {
+                   
+                }
+            }
+        }
+
+        private void izquierdaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            richTextBox1.SelectionAlignment = HorizontalAlignment.Left;
+        }
+
+        private void centroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            richTextBox1.SelectionAlignment = HorizontalAlignment.Center;
+        }
+        private void derechaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            richTextBox1.SelectionAlignment = HorizontalAlignment.Right;
+        }
+
+        private void imprimirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            printPreviewDialog1.ShowDialog();
+        }
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            Font fontPrint = richTextBox1.SelectionFont;
+            e.Graphics.DrawString(richTextBox1.Text, fontPrint, Brushes.Black, 100, 100);
         }
     }
 }
