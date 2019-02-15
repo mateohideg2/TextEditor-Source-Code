@@ -59,6 +59,8 @@ namespace Text_Editor___Mateo_Hideg
                     Form1.ActiveForm.Text = archivo + " | TextEditor - Mateo Hideg";
                 }
             }
+            richTextBox1.SelectAll();
+            richTextBox1.SelectionAlignment = HorizontalAlignment.Left;
         }
 
         private void nuevoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -91,6 +93,10 @@ namespace Text_Editor___Mateo_Hideg
             richTextBox1.Clear();
             archivo = null;
             Form1.ActiveForm.Text = "TextEditor - Mateo Hideg";
+            richTextBox1.SelectAll();
+            richTextBox1.SelectionAlignment = HorizontalAlignment.Left;
+            richTextBox1.Cut();
+            richTextBox1.Paste();
         }
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
