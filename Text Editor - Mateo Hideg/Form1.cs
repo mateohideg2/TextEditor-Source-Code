@@ -351,29 +351,13 @@ namespace Text_Editor___Mateo_Hideg
         {
             fontDialog1.ShowColor = true;
 
-            if (richTextBox1.SelectedText == "")
-            {
-                fontDialog1.Font = richTextBox1.Font;
-                fontDialog1.Color = richTextBox1.ForeColor;
-            }
-            else
-            {
-                fontDialog1.Font = richTextBox1.SelectionFont;
-                fontDialog1.Color = richTextBox1.SelectionColor;
-            }
+            fontDialog1.Font = richTextBox1.Font;
+            fontDialog1.Color = richTextBox1.ForeColor;
 
             if (fontDialog1.ShowDialog() != DialogResult.Cancel)
             {
-                if (richTextBox1.SelectedText == "")
-                {
-                    richTextBox1.Font = fontDialog1.Font;
-                    richTextBox1.ForeColor = fontDialog1.Color;
-                }
-                else
-                {
-                    richTextBox1.SelectionFont = fontDialog1.Font;
-                    richTextBox1.SelectionColor = fontDialog1.Color;
-                }
+                richTextBox1.Font = fontDialog1.Font;
+                richTextBox1.ForeColor = fontDialog1.Color;
             }
         }
 
@@ -414,7 +398,7 @@ namespace Text_Editor___Mateo_Hideg
                 }
                 else
                 {
-                   
+                    
                 }
             }
         }
@@ -433,7 +417,7 @@ namespace Text_Editor___Mateo_Hideg
             richTextBox1.SelectionAlignment = HorizontalAlignment.Right;
         }
 
-        private void imprimirToolStripMenuItem_Click(object sender, EventArgs e)
+        private void vistapToolStripMenuItem_Click(object sender, EventArgs e)
         {
             printPreviewDialog1.ShowDialog();
         }
@@ -442,6 +426,14 @@ namespace Text_Editor___Mateo_Hideg
         {
             Font fontPrint = richTextBox1.SelectionFont;
             e.Graphics.DrawString(richTextBox1.Text, fontPrint, Brushes.Black, 100, 100);
+        }
+
+        private void imprimirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (printDialog1.ShowDialog() != DialogResult.Cancel)
+            {
+                printDialog1.Document.Print();
+            }
         }
     }
 }

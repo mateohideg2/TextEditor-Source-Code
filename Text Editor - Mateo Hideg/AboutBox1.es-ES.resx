@@ -604,7 +604,7 @@
     <value>Nombre de producto: TextEditor</value>
   </data>
   <data name="labelVersion.Text" xml:space="preserve">
-    <value>Versión: 1.0.8</value>
+    <value>Versión: 1.0.9</value>
   </data>
   <data name="labelCopyright.Text" xml:space="preserve">
     <value>Copyright 2019</value>
